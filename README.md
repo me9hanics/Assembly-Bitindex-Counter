@@ -1,13 +1,13 @@
 # AssemblyBitindexCounter
-A low-level program written in Assembly (comments in HU).
+A low-level program written in Assembly (comments in Hungarian).
 
 This was made for the EFM8 Busy Bee 8-bit microcontroller produced by Silicon Labs. Software environment: Simplicity (Eclipse-based IDE) v4, compiled with Keil 8051.  
 The program consists of a subroutine, which given the IRAM's cell number (0-255) and the bit's serial number in the cell (0-7), in two registers, outputs the bit index in two registers (0-2047). 
 
-Visual explanation pdf is available in Hungarian.
+A PDF is available for explanation in Hungarian.
 
 ## Bitindex counter
-  The task is to create a subroutine program as efficient as possible, that computes the bitindex of the internal memory, that is: given the index of cell (0-255) in the IRAM and the serial number/index of the current bit in the cell (0-7), output the serial number of the bit (equivalent to the number of bits between the given bit and the IRAM's starting bit, in cell 0 with index 0). I came up with a fast solution using bit shifting.
+  The task is to create a subroutine program that is as efficient as possible, that computes the bitindex of the internal memory, that is: given the index of the cell (0-255) in the IRAM and the serial number/index of the current bit in the cell (0-7), output the serial number of the bit (equivalent to the number of bits between the given bit and the IRAM's starting bit, in cell 0 with index 0). I came up with a fast solution using bit shifting.
 
 ## The idea of the solution
 
